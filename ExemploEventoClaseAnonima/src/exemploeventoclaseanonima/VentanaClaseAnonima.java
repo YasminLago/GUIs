@@ -8,7 +8,7 @@ import javax.swing.*;
  *
  * @author ylagorebollar
  */
-public class VentanaClaseAnonima implements ActionListener{
+public class VentanaClaseAnonima{
     JFrame marco; 
     JPanel panel;
     JButton botonPremer;
@@ -34,17 +34,12 @@ public class VentanaClaseAnonima implements ActionListener{
         
         //Asociamos Listener
         botonPremer.addActionListener(new ActionListener(){
-           
+        @Override
         public void actionPerformed(ActionEvent e) {
             etiqueta.setText("Dende unha clase anonima");
         }});
         
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         marco.setVisible(true);
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        etiqueta.setText("Premeches o boton");
     }
 }
