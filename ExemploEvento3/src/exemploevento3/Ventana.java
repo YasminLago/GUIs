@@ -11,7 +11,7 @@ public class Ventana {
     JFrame marco; 
     JPanel panel;
     JButton botonPremer;
-    JLabel etiqueta;
+    static JLabel  etiqueta;
     
     public void amosar(){
         marco = new JFrame("Evento venta externa");
